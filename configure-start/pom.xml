@@ -11,9 +11,11 @@
 
     <artifactId>configure-start</artifactId>
 
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>11</java.version>
+        <log4j2.config>log4j2.xml</log4j2.config>
     </properties>
 
 

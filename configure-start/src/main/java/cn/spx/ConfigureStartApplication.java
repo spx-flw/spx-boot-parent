@@ -1,19 +1,25 @@
 package cn.spx;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.spi.LoggerContext;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
-@SpringBootApplication
+import java.net.URI;
+
 /**
  * 开启定时任务
+ *   @author mlmdflr
  */
 @EnableScheduling
+@SpringBootApplication
 public class ConfigureStartApplication {
 
     public static void main(String[] args) {
-        System.out.println(System.getProperty("user.dir")+"configure-start\\src\\main\\resources\\log4j2.xml");
         SpringApplication.run(ConfigureStartApplication.class, args);
     }
 
 }
+
+
