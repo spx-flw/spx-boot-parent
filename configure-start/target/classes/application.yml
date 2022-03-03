@@ -1,0 +1,7 @@
+spring:
+  gson:
+    date-format: yyyy-MM-dd HH:mm:ss
+  profiles:
+    active: dev
+  banner:
+    location: banner.txt
