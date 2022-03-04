@@ -1,1 +1,1 @@
-# spx-boot-parent
+# cn.spx-boot-parent

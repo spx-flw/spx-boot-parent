@@ -22,5 +22,10 @@
             <artifactId>core</artifactId>
             <version>1.0.0</version>
         </dependency>
+        <dependency>
+            <groupId>cn.spx</groupId>
+            <artifactId>auth</artifactId>
+            <version>1.0.0</version>
+        </dependency>
     </dependencies>
 </project>
