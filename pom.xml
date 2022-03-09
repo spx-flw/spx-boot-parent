@@ -4,10 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>cn.cn.spx</groupId>
-    <artifactId>cn.spx-parent</artifactId>
+    <groupId>cn.spx</groupId>
+    <artifactId>spx-parent</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0</version>
+
+
     <modules>
         <module>common</module>
         <module>api</module>
@@ -44,12 +46,21 @@
                 <artifactId>spring-boot-starter-aop</artifactId>
                 <version>${spring.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-webflux</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-configuration-processor</artifactId>
                 <optional>true</optional>
                 <version>${spring.version}</version>
             </dependency>
+
+
             <!--<dependency>-->
             <!--    <groupId>org.springframework.boot</groupId>-->
             <!--    <artifactId>spring-boot-starter-data-redis</artifactId>-->

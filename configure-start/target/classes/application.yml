@@ -3,5 +3,8 @@ spring:
     date-format: yyyy-MM-dd HH:mm:ss
   profiles:
     active: dev
+    include: auth
   banner:
     location: banner.txt
+
+

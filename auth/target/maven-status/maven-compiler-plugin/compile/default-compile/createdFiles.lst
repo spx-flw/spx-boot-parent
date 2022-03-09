@@ -1,0 +1,4 @@
+config\TokenSnowflake.class
+config\SpxRolePermissionCfg.class
+config\SpxAuthExceptionHandlerCfg.class
+config\SpxTokenCfg.class

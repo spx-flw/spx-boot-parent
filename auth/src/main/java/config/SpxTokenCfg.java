@@ -21,13 +21,12 @@ public class SpxTokenCfg {
     public void rewriteSaStrategy() {
         SaStrategy.me.createToken = (loginId, loginType) -> IdUtil.getSnowflake(tokenSnowflake.getWorkerId(), tokenSnowflake.getDatacenterId()).nextIdStr();
     }
-
-    @Data
-    @Component
-    @ConfigurationProperties(prefix = "token-snowflake")
-    private class TokenSnowflake {
-        private long workerId;
-        private long datacenterId;
-    }
 }
 
+@Data
+@Component
+@ConfigurationProperties(prefix = "token-snowflake")
+class TokenSnowflake {
+    private long workerId;
+    private long datacenterId;
+}
